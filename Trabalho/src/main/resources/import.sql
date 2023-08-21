@@ -15,4 +15,4 @@ values (1, 'Exploração Interdisciplinar: Semana de Pesquisa Aberta',
        (5, 'Semana Sustentável: Ações Ambientais e Sociais',
         'Junte-se a nós para uma Semana Sustentável, contribuindo com ações práticas para um campus mais verde e impactando positivamente a comunidade.',
         now(), 35);
-alter sequence evento_seq restart with 6;
+alter sequence evento_id_seq restart with 6;
