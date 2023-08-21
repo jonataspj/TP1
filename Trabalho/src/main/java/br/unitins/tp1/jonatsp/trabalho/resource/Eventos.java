@@ -1,7 +1,7 @@
-package br.unitins.tp1.jonatsp.trabalho01.resource;
+package br.unitins.tp1.jonatsp.trabalho.resource;
 
 
-import br.unitins.tp1.jonatsp.trabalho01.entity.Evento;
+import br.unitins.tp1.jonatsp.trabalho.entity.Evento;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;

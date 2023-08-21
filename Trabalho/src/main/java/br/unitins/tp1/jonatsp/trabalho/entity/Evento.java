@@ -1,4 +1,4 @@
-package br.unitins.tp1.jonatsp.trabalho01.entity;
+package br.unitins.tp1.jonatsp.trabalho.entity;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntity;
 import jakarta.persistence.Entity;
