@@ -11,4 +11,6 @@ public class Evento extends PanacheEntity {
     public String descricao;
     public LocalDateTime data;
     public Long maxParticipantes;
+
+
 }

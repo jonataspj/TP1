@@ -2,11 +2,9 @@ package br.unitins.tp1.jonatsp.trabalho01.resource;
 
 
 import br.unitins.tp1.jonatsp.trabalho01.entity.Evento;
-import jakarta.ws.rs.GET;
-import jakarta.ws.rs.Path;
-import jakarta.ws.rs.Produces;
-import jakarta.ws.rs.QueryParam;
+import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.Response;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -30,6 +28,14 @@ public class Eventos {
         LocalDateTime max = LocalDateTime.of(LocalDate.now(), LocalTime.MAX);
         LocalDateTime min = LocalDateTime.of(LocalDate.now(), LocalTime.MIN);
         return Evento.find("data between ?1 and ?2", min, max).list();
+    }
+
+    @POST
+    @Path("/criar")
+    @Consumes({MediaType.APPLICATION_JSON, MediaType.MULTIPART_FORM_DATA})
+    public Response criar(Evento e) {
+        e.persist();
+        return Response.accepted().build();
     }
 
 }
