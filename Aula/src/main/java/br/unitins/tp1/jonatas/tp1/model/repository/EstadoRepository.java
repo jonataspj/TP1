@@ -1,7 +1,7 @@
-package br.unitins.tp1.jonatas.tp1.repository;
+package br.unitins.tp1.jonatas.tp1.model.repository;
 
 
-import br.unitins.tp1.jonatas.tp1.entity.Estado;
+import br.unitins.tp1.jonatas.tp1.model.entity.Estado;
 import io.quarkus.hibernate.orm.panache.PanacheRepository;
 import jakarta.enterprise.context.ApplicationScoped;
 

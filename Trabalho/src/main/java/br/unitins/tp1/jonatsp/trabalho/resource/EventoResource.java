@@ -1,8 +1,8 @@
 package br.unitins.tp1.jonatsp.trabalho.resource;
 
 
-import br.unitins.tp1.jonatsp.trabalho.entity.Evento;
-import br.unitins.tp1.jonatsp.trabalho.repository.EventoRepository;
+import br.unitins.tp1.jonatsp.trabalho.model.entity.Evento;
+import br.unitins.tp1.jonatsp.trabalho.model.repository.EventoRepository;
 import jakarta.inject.Inject;
 import jakarta.transaction.Transactional;
 import jakarta.ws.rs.*;

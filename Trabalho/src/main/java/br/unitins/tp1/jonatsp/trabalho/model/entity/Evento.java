@@ -1,4 +1,4 @@
-package br.unitins.tp1.jonatsp.trabalho.entity;
+package br.unitins.tp1.jonatsp.trabalho.model.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

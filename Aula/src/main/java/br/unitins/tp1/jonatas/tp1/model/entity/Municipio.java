@@ -1,17 +1,18 @@
-package br.unitins.tp1.jonatas.tp1.entity;
+package br.unitins.tp1.jonatas.tp1.model.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
-public class Estado {
+public class Municipio {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(length = 60, nullable = false)
     private String nome;
-    private String sigla;
+
+    @ManyToOne
+    @JoinColumn(name = "id_estado")
+    private Estado estado;
 
     public Long getId() {
         return id;
@@ -29,11 +30,11 @@ public class Estado {
         this.nome = nome;
     }
 
-    public String getSigla() {
-        return sigla;
+    public Estado getEstado() {
+        return estado;
     }
 
-    public void setSigla(String sigla) {
-        this.sigla = sigla;
+    public void setEstado(Estado estado) {
+        this.estado = estado;
     }
 }

@@ -1,6 +1,6 @@
-package br.unitins.tp1.jonatsp.trabalho.repository;
+package br.unitins.tp1.jonatsp.trabalho.model.repository;
 
-import br.unitins.tp1.jonatsp.trabalho.entity.Evento;
+import br.unitins.tp1.jonatsp.trabalho.model.entity.Evento;
 import io.quarkus.hibernate.orm.panache.PanacheRepository;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.ws.rs.NotFoundException;
